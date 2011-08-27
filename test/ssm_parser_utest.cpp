@@ -6,6 +6,7 @@
  */
 
 #include "ssm_parser_utest.h"
+
 #include <boost/tr1/memory.hpp>
 using std::string;
 
@@ -42,7 +43,7 @@ TEST_F(ssm_parser_utest,test1)
 	ASSERT_EQ(string("CZ"),p_ssm->get_airline());
 	ASSERT_EQ(string("6306"),p_ssm->get_flight_number());
 	ASSERT_EQ('^',p_ssm->get_suffix());
-	ASSERT_EQ(0,0);
+	ASSERT_EQ(0,1);
 }
 TEST_F(ssm_parser_utest,test2)
 {
